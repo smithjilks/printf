@@ -7,19 +7,19 @@
   */
 int print_oct(unsigned int n)
 {
-	int count = 0;
+int count = 0;
 
-	if (n)
-	{
-		if (n >= 1)
-		{
-			count += print_oct(n / 8);
-			count += _putchar((n % 8) + '0');
-		}
-		else
-		{
-			return (-1);
-		}
-	}
-	return (count);
+if (n)
+{
+if (n >= 1)
+{
+count += print_oct(n / 8);
+count += _putchar((n % 8) + '0');
+}
+else
+{
+return (-1);
+}
+}
+return (count);
 }

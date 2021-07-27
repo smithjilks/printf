@@ -7,18 +7,17 @@
  */
 int print_unt(unsigned int n)
 {
-	unsigned int a = n;
-	int i = 0;
+unsigned int a = n;
+int i = 0;
 
-	if (n <= 0)
-		return (-1);
-	if (n)
-	{
-		if ((a / 10) > 0)
-			i += print_unt(a / 10);
-		_putchar((a % 10) + '0');
-		i++;
-	}
-	return (i);
+if (n <= 0)
+return (-1);
+if (n)
+{
+if ((a / 10) > 0)
+i += print_unt(a / 10);
+_putchar((a % 10) + '0');
+i++;
 }
-
+return (i);
+}
