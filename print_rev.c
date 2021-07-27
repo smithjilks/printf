@@ -6,21 +6,21 @@
 */
 int print_rev(char *c)
 {
-	int n = 0;
-	int j;
+int n = 0;
+int j;
 
-	if (!c)
-		return (-1);
+if (!c)
+return (-1);
 
-	while (*(c + n) != '\0')
-	{
-		n++;
-	}
+while (*(c + n) != '\0')
+{
+n++;
+}
 
-	for (j = n - 1; j >= 0; j--)
-	{
-		_putchar(*(c + j));
-	}
+for (j = n - 1; j >= 0; j--)
+{
+_putchar(*(c + j));
+}
 
-	return (n);
+return (n);
 }
